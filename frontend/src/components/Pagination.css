@@ -1,0 +1,33 @@
+.pagination {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.pagination button {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  padding: 7px 15px;
+  color: darkslateblue;
+  border: 1px solid darkslateblue;
+  background: white;
+  transition: all 0.3s ease-out;
+}
+
+.pagination button:hover {
+  background: darkslateblue;
+  color: white;
+  transform: scale(1.2);
+}
+
+.pagination button:disabled {
+  color: white;
+  background: midnightblue;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pagination button:first-child:disabled,
+.pagination button:last-child:disabled {
+  opacity: 0.7;
+  background: darkslateblue;
+}

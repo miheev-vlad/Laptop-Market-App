@@ -1,0 +1,60 @@
+.register-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.register-screen_form {
+  width: 380px;
+  padding: 1.5rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.register-screen_title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: darkslateblue;
+  font-size: 2rem;
+  text-shadow: 2px 2px 3px grey;
+}
+
+.register-screen_subtext {
+  font-size: 1rem;
+  display: block;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.register-screen_subtext-link {
+  font-size: 1.1rem;
+}
+
+.register-screen_subtext-link:hover {
+  color: deeppink;
+}
+
+.loader {
+  border: 10px solid deeppink;
+  border-radius: 50%;
+  border-top: 10px solid darkslateblue;
+  border-bottom: 10px solid darkslateblue;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,39 @@
+.content__loader {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: auto;
+}
+
+.preloader {
+  background: #f4f4f4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.preloader__row {
+  display: inline-block;
+  text-align: center;
+}
+
+.preloader__item {
+  display: inline-block;
+  background-color: midnightblue;
+  width: 30px;
+  height: 30px;
+  animation: preloader-bounce 1.05s infinite ease-in-out;
+}
+
+@keyframes preloader-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

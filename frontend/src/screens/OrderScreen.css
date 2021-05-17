@@ -1,0 +1,31 @@
+.ordercreated-screen {
+  margin: 20px;
+}
+
+.ordercreated-screen p:first-child{
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.ordercreated-screen p:last-child{
+  font-style: italic;
+  font-size: 1.4rem;
+}
+
+.continue_shopping_message {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.go_shopping_link {
+  text-decoration: none;
+  color: darkslateblue;
+}
+
+.go_shopping_link:hover {
+  color: deeppink;
+  font-weight: bold;
+}

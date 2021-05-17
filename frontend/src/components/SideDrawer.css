@@ -1,0 +1,76 @@
+.sidedrawer {
+  width: 70%;
+  height: 100vh;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 200;
+  transform: translateX(100%);
+  transition: all 0.3s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidedrawer.show {
+  transform: translateX(0);
+}
+
+.sidedrawer_links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sidedrawer_links > li{
+  display: flex;
+  align-items: center;
+}
+
+.sidedrawer_links > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  padding: 1rem;
+  text-decoration: none;
+  color: midnightblue;
+  font-size: 1.6rem;
+}
+
+.sidedrawer_links > li > a:hover {
+  background: midnightblue;
+  color: deeppink;
+}
+
+.sidedrawer_links > li > a > span {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.sidedrawer_cartbage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: midnightblue;
+  color: #f4f4f4;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.sidedrawer_links > li > a:hover .sidedrawer_cartbage {
+  background: darkslateblue;
+}
+
+@media (min-width: 960px) {
+  .sidedrawer {
+    display: none;
+  }
+}
